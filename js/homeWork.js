@@ -74,5 +74,50 @@
 
 // Задание 5
 
+// let price;
+// let country = prompt("введите страну доставки");
+// country = country.toLowerCase();
+
+// switch (country) {
+//         case "китай":
+//         price = 100;
+//         break;
+
+//         case "чили":
+//         price = 250;
+//         break;
+
+//         case "австралия":
+//         price = 170;
+//         break;
+
+//         case "индия":
+//         price = 80;
+//         break;
+
+//         case "ямайка":
+//         price = 120;
+//         break;
+        
+//         default:
+//         let message = alert('В вашей стране доставка не доступна');
+// }
+// console.log(`Доставка в страну ${country} будет стоить ${price} кредитов`);
 
 
+
+
+// задача 6
+
+// let input;
+// let total = 0;
+
+// input = Number(input);
+
+
+// for (input = prompt(); input > 0; input + total) {
+     
+//         console.log(Number(total));   
+// }
+// 1
+// console.log("результат");
