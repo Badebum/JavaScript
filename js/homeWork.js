@@ -112,12 +112,23 @@
 // let input;
 // let total = 0;
 
-// input = Number(input);
+// do {
+//     input = prompt('Введите число');
 
+//     if (input === null) {
+//         alert(`Общая сумма чисел равна ${total}`);
+//         break;
+//     }
 
-// for (input = prompt(); input > 0; input + total) {
-     
-//         console.log(Number(total));   
-// }
-// 1
-// console.log("результат");
+//     input = Number(input);
+
+//     const notANan = Number.isNaN(input);
+
+//     if (notANan) {
+//         alert('Было введено не число, попробуйте еще раз');
+//         continue;
+//     }
+
+//     total += input;
+
+// } while (true);
