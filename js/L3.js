@@ -122,14 +122,71 @@
 // ..........................................
 // подсчет суммы двух массивов
 
-const array1 = [5, 10, 15, 20];
-const array2 = [10, 20, 30];
-const array3 = [5, 10, 15, 20, 10, 20, 30,1];
-let total = 0;
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+// const array3 = [5, 10, 15, 20, 10, 20, 30, 1];
+// let total = 0;
 
-const numbers = array1.concat(array2).concat(array3);
+// const numbers = array1.concat(array2, array3);
 
-for (const number of numbers) {
-    total+= number;
-}
-console.log(total);
+// for (const number of numbers) {
+//     total+= number;
+// }
+// console.log(total);
+
+
+
+// ДЗ  ........... ДЗ..............ДЗ
+
+// задание 1
+
+// const logItems = function(array) {
+//    for ( let i = 0; i< array.length; i +=1){
+//        const message = `${i + 1} - ${array[i]}`;
+
+//        console.log(message);
+//    }
+// }
+ 
+
+//   /*
+//    * Вызовы функции для проверки работоспособности твоей реализации.
+//    */
+//   logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
+  
+//   logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+
+
+  // ДЗ  ........... ДЗ..............ДЗ
+
+// задание 2
+
+const calculateEngravingPrice = function(message, pricePerWord) {
+    
+
+  };
+  
+  /*
+   * Вызовы функции для проверки работоспособности твоей реализации.
+   */
+  console.log(
+    calculateEngravingPrice(
+      'Proin sociis natoque et magnis parturient montes mus',
+      10,
+    ),
+  ); // 80
+  
+  console.log(
+    calculateEngravingPrice(
+      'Proin sociis natoque et magnis parturient montes mus',
+      20,
+    ),
+  ); // 160
+  
+  console.log(
+    calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40),
+  ); // 240
+  
+  console.log(
+    calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
+  ); // 120
