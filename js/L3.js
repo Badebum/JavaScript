@@ -13,14 +13,6 @@
 // const cart = [54, 28, 105, 78, 92, 17, 120];
 // let total = 0;
 
-// // for (let i = 0; i < cart.length; i += 1) {
-// //     // console.log(cart[i]);
-
-// //     total +=cart[i];
-// // }
-
-// // console.log(`Total: `, total);
-
 // for (const value of cart) {
 //     total+=value;
 // }
@@ -161,32 +153,90 @@
 
 // задание 2
 
-const calculateEngravingPrice = function(message, pricePerWord) {
-    
+// const calculateEngravingPrice = function(message, pricePerWord) {
+// const result = message.split(' ').length * pricePerWord;
+// console.log(result);
+//   };
+  
+//   /*
+//    * Вызовы функции для проверки работоспособности твоей реализации.
+//    */
+//   console.log(
+//     calculateEngravingPrice(
+//       'Proin sociis natoque et magnis parturient montes mus',
+//       10,
+//     ),
+//   ); // 80
+  
+//   console.log(
+//     calculateEngravingPrice(
+//       'Proin sociis natoque et magnis parturient montes mus',
+//       20,
+//     ),
+//   ); // 160
+  
+//   console.log(
+//     calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40),
+//   ); // 240
+  
+//   console.log(
+//     calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
+//   ); // 120
 
-  };
+
+
+ // ДЗ  ........... ДЗ..............ДЗ
+
+// задание 3
+
+// const findLongestWord = function(string) {
+//   const words = string.split(' ');
+//   let longestWord = words[0];
+
+
+// for (const word of words) {
+//   if (word.length > longestWord.length){
+//     longestWord = word;
+//   }
   
-  /*
-   * Вызовы функции для проверки работоспособности твоей реализации.
-   */
-  console.log(
-    calculateEngravingPrice(
-      'Proin sociis natoque et magnis parturient montes mus',
-      10,
-    ),
-  ); // 80
-  
-  console.log(
-    calculateEngravingPrice(
-      'Proin sociis natoque et magnis parturient montes mus',
-      20,
-    ),
-  ); // 160
-  
-  console.log(
-    calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40),
-  ); // 240
-  
-  console.log(
-    calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
-  ); // 120
+// }
+// return longestWord;
+// };
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
+
+// console.log(findLongestWord('Google do a roll')); // 'Google'
+
+// console.log(findLongestWord('May the force be with you')); // 'force'
+
+
+
+ // ДЗ  ........... ДЗ..............ДЗ
+
+// задание 4
+
+const formatString = function(string) {
+  const 
+};
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+// вернется оригинальная строка
+
+console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+// вернется форматированная строка
+
+console.log(formatString('Curabitur ligula sapien.'));
+// вернется оригинальная строка
+
+console.log(
+  formatString(
+    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+  ),
+);
+// вернется форматированная строка
