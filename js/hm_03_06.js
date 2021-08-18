@@ -11,6 +11,7 @@ const calculateTotalPrice = function (allProdcuts, productName) {
       return key.price * key.quantity;
     }
   }
+  return `Неверное имя товара`;
 };
 
 // const calculateTotalPrice = function (allProdcuts, productName) {
