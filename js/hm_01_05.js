@@ -39,4 +39,3 @@ switch (deliveryCountry) {
 }
 
 
-// alert(`Доставка в ${country} будет стоить ${price} кредитов`);   
