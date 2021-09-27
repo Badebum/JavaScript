@@ -9,7 +9,7 @@
 //   return total;
 // };
 
-const countTotalSalary = function (employees) {
+const countTotalSalary = employees => {
   let total = 0;
   for (const value in employees) {
     total += employees[value];
