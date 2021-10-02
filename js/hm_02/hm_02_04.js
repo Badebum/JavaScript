@@ -1,11 +1,5 @@
 const formatString = string => {
-  let str = '';
-  if (string.length > 40) {
-    str = string.substr(0, 40) + '...';
-  } else {
-    str = string;
-  }
-  return str;
+  return string.length > 40 ? string.slice(0, 40) + '...' : string;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
