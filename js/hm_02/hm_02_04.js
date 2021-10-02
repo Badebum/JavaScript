@@ -1,18 +1,13 @@
 const formatString = string => {
   let str = '';
-
   if (string.length > 40) {
     str = string.substr(0, 40) + '...';
   } else {
     str = string;
   }
-
   return str;
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 // вернется оригинальная строка
 

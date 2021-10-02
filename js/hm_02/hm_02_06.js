@@ -2,22 +2,10 @@ let input;
 const numbers = [];
 let total = 0;
 
-function sumInput() {
-  while (true) {
-    input = prompt('Введите число');
+do {
+  input = Number(prompt('введите число'));
+  numbers.push(input);
+} while (input > 0);
 
-    if (input === '' || input === null || !isFinite(input)) break;
-
-    numbers.push(+input);
-  }
-
-  for (const number of numbers) {
-    total += number;
-  }
-  return total;
-}
-
-sumInput();
-alert(`Общая сумма чисел равна ${total}`);
-
-//  подсчитать сумму всех чисел массива и записать в переменную total
+total = numbers.map(i => (total += i), (total = 0)).reverse()[0];
+console.log(`Общая сумма чисел равна ${total}`);

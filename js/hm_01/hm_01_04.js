@@ -1,16 +1,16 @@
-let credits = 23580;
+const credits = 23580;
 const pricePerDroid = 3000;
-let totalPrice = 0;
+let totalPrice;
+let orderedDroid = prompt('Введите количество дроидов');
 
-let piece = prompt('введите количество дронов');
-piece = Number(piece);
+orderedDroid === null
+  ? alert('Отменено пользователем!')
+  : (totalPrice = orderedDroid * pricePerDroid);
 
-piece <= 0 ? console.log('отменено пользователем') : totalPrice = piece * pricePerDroid;
-
-if(totalPrice > credits ){
-    console.log('Недостаточно средств на счету');
-} else if (totalPrice <= credits) {
-    credits -= totalPrice;
-    console.log(`Вы купили ${piece} дроидов, на счету осталось ${credits} кредитов.`);
-}
-
+totalPrice > credits
+  ? alert('Недостаточно средств на счету!')
+  : alert(
+      `Вы купили ${orderedDroid} дроидов, на счету осталось ${
+        credits - totalPrice
+      } кредитов.`,
+    );
