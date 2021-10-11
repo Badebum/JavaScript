@@ -5,26 +5,13 @@ const products = [
   { name: 'Захват', price: 1200, quantity: 2 },
 ];
 
-const calculateTotalPrice = function (allProdcuts, productName) {
-  for (const key of allProdcuts) {
-    if (key.name === productName) {
-      return key.price * key.quantity;
-    }
-  }
-  return `Неверное имя товара`;
+const calculateTotalPrice = (allProdcuts, productName) => {
+  return allProdcuts
+    .filter(e => e.name === productName)
+    .map(e => e.price * e.quantity);
 };
 
-// const calculateTotalPrice = function (allProdcuts, productName) {
-//   for (let i = 0; allProdcuts.length > i; i++) {
-//     let tempObject = allProdcuts[i];
-//     if (tempObject.name === productName) {
-//       let totalСost = tempObject.price * tempObject.quantity;
-//       return totalСost;
-//     }
-//   }
-// };
-
-/*
+/*ujt88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhtyyyyyy
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
 console.log(calculateTotalPrice(products, 'Радар')); // 5200

@@ -1,5 +1,4 @@
 const findBestEmployee = employees => {
-  const entries = Object.entries(employees);
   let bestEmployees = 0;
   let nameEmployees;
 
