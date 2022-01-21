@@ -1,21 +1,5 @@
-// Что такое prototype. JavaScript Prototype
+const makeNegative = num => -Math.abs(num);
 
-const person = new Object({
-  name: 'Lu',
-  age: 25,
-  greet: () => {
-    console.log('GREET!');
-  },
-});
-
-Object.prototype.sayHello = () => {
-  console.log('hello');
-};
-
-const lena = Object.create(person);
-
-// console.log(person);
-// console.log(lena);
-
-const str = '';
-console.log(str.toString());
+console.log(makeNegative(2));
+console.log(makeNegative(0));
+console.log(makeNegative(-12));
