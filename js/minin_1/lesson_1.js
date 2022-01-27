@@ -1,5 +1,3 @@
-const makeNegative = num => -Math.abs(num);
+const number = arr =>  arr.map((a, i) => `${++i}: ${a}`);
 
-console.log(makeNegative(2));
-console.log(makeNegative(0));
-console.log(makeNegative(-12));
+console.log(number(['a', 'b', 'c']));
