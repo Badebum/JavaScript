@@ -1,4 +1,3 @@
-const even_or_odd = number => (number % 2 ? 'Even' : 'Odd');
+const friend = friends => friends.filter(a => a.includes('M'));
 
-console.log(even_or_odd(2));
-console.log(even_or_odd(3));
+console.log(friend(['Ryan', 'Kieran', 'Mark']));
