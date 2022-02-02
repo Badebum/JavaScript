@@ -117,5 +117,10 @@ const getSortedUniqueSkills = users => {
   return sorterBySkills;
 };
 
+// const getSortedUniqueSkills = users => {
+//   let res = users.flatMap(({ skills }) => skills);
+//   return res.filter((e, i) => res.indexOf(e) === i).sort();
+// };
+
 // console.log(getSortedUniqueSkills(users));
 // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
