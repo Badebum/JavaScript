@@ -6,18 +6,26 @@ const products = [
 ];
 
 const getAllPropValues = (arr, prop) => {
-  const propArray = [];
-
-  for (let i = 0; i < arr.length; i += 1) {
-    let obj = arr[i];
-
-    if (typeof obj[prop] !== 'undefined') {
-      propArray.push(obj[prop]);
-    }
-  }
-
-  return propArray;
+  const newArr = [];
+  arr.map(value =>
+    value[prop] !== undefined ? newArr.push(value[prop]) : newArr,
+  );
+  return newArr;
 };
+
+// const getAllPropValues = (arr, prop) => {
+//   const propArray = [];
+
+//   for (let i = 0; i < arr.length; i += 1) {
+//     let obj = arr[i];
+
+//     if (typeof obj[prop] !== 'undefined') {
+//       propArray.push(obj[prop]);
+//     }
+//   }
+
+//   return propArray;
+// };
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
