@@ -1,27 +1,14 @@
-const countries = {
-  english: 'Welcome',
-  czech: 'Vitejte',
-  danish: 'Velkomst',
-  dutch: 'Welkom',
-  estonian: 'Tere tulemast',
-  finnish: 'Tervetuloa',
-  flemish: 'Welgekomen',
-  french: 'Bienvenue',
-  german: 'Willkommen',
-  irish: 'Failte',
-  italian: 'Benvenuto',
-  latvian: 'Gaidits',
-  lithuanian: 'Laukiamas',
-  polish: 'Witamy',
-  spanish: 'Bienvenido',
-  swedish: 'Valkommen',
-  welsh: 'Croeso',
-};
-
-function greet(language) {
-  return countries[language] || 'Welcome';
+function fakeBin(x) {
+  return x
+    .split('')
+    .map(a => {
+      if (a <= 5) {
+        return 0;
+      } else {
+        return 1;
+      }
+    })
+    .join('');
 }
 
-console.log(greet('duhjktch'));
-console.log(greet('IP_ADDRESS_INVALID'));
-console.log(greet('englighjghjsh'));
+console.log(fakeBin('45385593107843568'));
