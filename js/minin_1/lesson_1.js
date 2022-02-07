@@ -1,5 +1,5 @@
-function invert(array) {
-  return array.map(a => (a = -a));
+function getAge(inputString) {
+  return Number(inputString.slice(0, 1));
 }
 
-console.log(-0 === 0);
+console.log(getAge('4 years old'));
