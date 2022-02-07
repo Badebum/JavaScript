@@ -1,14 +1,5 @@
-function fakeBin(x) {
-  return x
-    .split('')
-    .map(a => {
-      if (a <= 5) {
-        return 0;
-      } else {
-        return 1;
-      }
-    })
-    .join('');
+function invert(array) {
+  return array.map(a => (a = -a));
 }
 
-console.log(fakeBin('45385593107843568'));
+console.log(-0 === 0);
