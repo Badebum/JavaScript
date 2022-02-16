@@ -1,7 +1,5 @@
-const doubleChar = str =>
-  str
-    .split('')
-    .map(a => a.repeat(2))
-    .join('');
+const arr = ['Hello world', 'This is a great solution', 'How are you'];
 
-console.log(doubleChar('asd'));
+const result = a => a.map(len => len.split(' ').length);
+
+console.log(result(arr));
