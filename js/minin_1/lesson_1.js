@@ -1,20 +1,11 @@
-function encrypt(text, n) {
-  console.log(text, n);
-  if (!text || n <= 0) return text;
-  while (n--) {
-    let ans = '';
-    for (let i = 1; i < text.length; i += 2) {
-      ans += text[i];
+var twoSum = function (nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[j] == target - nums[i]) {
+        return [i, j];
+      }
     }
-    for (let i = 0; i < text.length; i += 2) {
-      ans += text[i];
-    }
-    text = ans;
   }
-  return text;
-}
+};
 
-console.log(encrypt('This is a test!', 2));
-// console.log(encrypt('This is a test!', 3));
-// console.log(encrypt('This is a test!', 4));
-// console.log(encrypt('This is a test!', 5));
+console.log(twoSum([2, 7, 11, 15], 9));
