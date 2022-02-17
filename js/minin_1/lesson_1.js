@@ -1,8 +1,20 @@
-const arr = ['Hello world', 'This is a great solution', 'How are you'];
+function encrypt(text, n) {
+  console.log(text, n);
+  if (!text || n <= 0) return text;
+  while (n--) {
+    let ans = '';
+    for (let i = 1; i < text.length; i += 2) {
+      ans += text[i];
+    }
+    for (let i = 0; i < text.length; i += 2) {
+      ans += text[i];
+    }
+    text = ans;
+  }
+  return text;
+}
 
-const result = a => Array.prototype.join.call(a, ' ');
-
-console.log(result(arr));
-
-const alt = Array.prototype.join.call('JavaScript', ' ');
-console.log(alt);
+console.log(encrypt('This is a test!', 2));
+// console.log(encrypt('This is a test!', 3));
+// console.log(encrypt('This is a test!', 4));
+// console.log(encrypt('This is a test!', 5));
