@@ -1,10 +1,12 @@
-function squareDigits(num) {
-  return num
-    .toString()
-    .split('')
-    .map(a => Number(a))
-    .map(a => a * a)
-    .join('');
+function openOrSenior(data) {
+  return data.map(a => (a[0] >= 55 && a[1] > 2 ? 'Senior' : 'Open'));
 }
 
-console.log(squareDigits(3212));
+console.log(
+  openOrSenior([
+    [45, 12],
+    [55, 3],
+    [19, -2],
+    [104, 20],
+  ]),
+);
