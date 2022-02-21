@@ -1,12 +1,15 @@
-function openOrSenior(data) {
-  return data.map(a => (a[0] >= 55 && a[1] > 2 ? 'Senior' : 'Open'));
-}
+const switchItUp = n =>
+  [
+    'Zero',
+    'One',
+    'Two',
+    'Three',
+    'Four',
+    'Five',
+    'Six',
+    'Seven',
+    'Eight',
+    'Nine',
+  ][n];
 
-console.log(
-  openOrSenior([
-    [45, 12],
-    [55, 3],
-    [19, -2],
-    [104, 20],
-  ]),
-);
+console.log(switchItUp(1));
