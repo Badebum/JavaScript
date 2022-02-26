@@ -1,15 +1,9 @@
-const switchItUp = n =>
-  [
-    'Zero',
-    'One',
-    'Two',
-    'Three',
-    'Four',
-    'Five',
-    'Six',
-    'Seven',
-    'Eight',
-    'Nine',
-  ][n];
+const upCase = str =>
+  str.split('').reduce((res, letter, i) => {
+    if (letter === letter.toUpperCase()) {
+      res.push(i);
+    }
+    return res;
+  }, []);
 
-console.log(switchItUp(1));
+console.log(upCase('asDfGasAA'));
